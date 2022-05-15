@@ -1,27 +1,22 @@
-let div = document.createElement('div')
-let grid = document.querySelector('.grid')
+let grid = document.querySelector(".grid");
 
 function makeGrid(num) {
+  for (let i = 0; i < num; i++) {
+    let collumDiv = document.createElement("div");
+    collumDiv.className = "collum-div";
+    grid.append(collumDiv);
+  }
 
-    for (let i = 0; i < num; i++) {
-        let collumDiv  = document.createElement('div')
-        collumDiv.className = 'collum-div'
-        grid.append(collumDiv)
+  let collumDivs = document.querySelectorAll(".collum-div");
+
+  collumDivs.forEach((collum) => {
+    for (let x = 0; x < num; x++) {
+      let rowDiv = document.createElement("div");
+      rowDiv.className = "row-div";
+    //   rowDiv.addEventListener(hover, () => )
+      collum.append(rowDiv);
     }
-
-    // let collumDivs = document.querySelectorAll('.collum-div')
-
-    // collumDivs.forEach(collum => { 
-    //     let rowDiv = document.createElement('div')
-    //     rowDiv.className = 'row-div'
-
-    //     collum.append(rowDiv)
-    //     collum.append(rowDiv)
-    //     collum.append(rowDiv)
-    //     collum.append(rowDiv)
-        
-    // });
+  });
 }
 
-makeGrid(10)
-
+makeGrid(50);

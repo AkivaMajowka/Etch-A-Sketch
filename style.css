@@ -7,6 +7,9 @@
 .container {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
@@ -26,4 +29,8 @@
 .row-div {
     border: solid 0.5px black;
     flex-grow: 1;
+}
+
+.black {
+    background-color: black;
 }
