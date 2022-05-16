@@ -1,6 +1,8 @@
 let grid = document.querySelector(".grid");
 
 function makeGrid(num) {
+  grid.innerHTML = " "
+
   for (let i = 0; i < num; i++) {
     let collumDiv = document.createElement("div");
     collumDiv.className = "collum-div";
@@ -19,5 +21,13 @@ function makeGrid(num) {
   });
 }
 
+function buttonHandler(e) {
+  let userPrompt = prompt("What size grid do you want? 20 - 100")
+  makeGrid(userPrompt);
+}
 
-makeGrid(200);
+let userPrompt;
+let button = document.querySelector('.pencil-size')
+button.addEventListener('click', buttonHandler)
+
+makeGrid(80);

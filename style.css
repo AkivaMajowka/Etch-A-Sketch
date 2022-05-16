@@ -33,7 +33,7 @@
     background-color: black;
 }
 
-#pensil-size {
+.pencil-size {
     position: absolute;
     top: 10px;
     left: 10px;
