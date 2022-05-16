@@ -22,15 +22,20 @@
 
 .collum-div{
     display: flex;
-    border: solid 0.5px black;
     flex-grow: 1;
 }
 
 .row-div {
-    border: solid 0.5px black;
     flex-grow: 1;
 }
 
 .black {
     background-color: black;
+}
+
+#pensil-size {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 7px 10px;
 }

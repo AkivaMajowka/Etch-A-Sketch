@@ -13,10 +13,11 @@ function makeGrid(num) {
     for (let x = 0; x < num; x++) {
       let rowDiv = document.createElement("div");
       rowDiv.className = "row-div";
-    //   rowDiv.addEventListener(hover, () => )
+      rowDiv.addEventListener("mouseover", e => e.target.classList.add('black'))
       collum.append(rowDiv);
     }
   });
 }
 
-makeGrid(50);
+
+makeGrid(200);
